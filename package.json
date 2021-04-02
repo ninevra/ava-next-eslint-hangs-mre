@@ -1,0 +1,26 @@
+{
+  "name": "ava-next-eslint-hangs",
+  "version": "0.0.0",
+  "author": "ninevra",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "lint": "eslint test.js"
+  },
+  "dependencies": {
+    "ava": "^4.0.0-alpha.1",
+    "eslint": "^7.23.0",
+    "eslint-plugin-ava": "^12.0.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2021
+    },
+    "plugins": [
+      "ava"
+    ],
+    "rules": {
+      "ava/no-ignored-test-files": "error"
+    }
+  }
+}
